@@ -1,0 +1,9 @@
+/* MuscleDiagram.css */
+.muscle-diagram-container {
+  position: relative;
+}
+
+/* Style for highlighted areas */
+.area-highlighted {
+  outline: 2px solid #ffd700; /* Add your preferred highlighting style here */
+}
