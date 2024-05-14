@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import ChatbotPopup from "../components/ChatbotPopup";
-const WhatIsHypertrophy: React.FC = () => {
+const WhatIsHypertrophy = () => {
   return (
     <>
       <div className="bg-black text-center">
