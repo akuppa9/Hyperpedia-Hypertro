@@ -27,5 +27,10 @@ namespace JSX {
         caption: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
         thead: React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableSectionElement>, HTMLTableSectionElement>;
         tbody: React.DetailedHTMLProps<React.HTMLAttributes<HTMLTableSectionElement>, HTMLTableSectionElement>;
+        svg: React.SVGProps<SVGSVGElement>;
+        path: React.SVGProps<SVGPathElement>;
+        label: React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>;
+        map: React.DetailedHTMLProps<React.MapHTMLAttributes<HTMLMapElement>, HTMLMapElement>;
+        area: React.DetailedHTMLProps<React.AreaHTMLAttributes<HTMLAreaElement>, HTMLAreaElement>;
     }
 }
