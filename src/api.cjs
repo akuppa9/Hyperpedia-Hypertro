@@ -9,6 +9,6 @@ app.get("/:prompt", cors(), function (req, res) {
     res.end(data);
   });
 });
-var server = app.listen(5001, function () {
-  console.log("Express App running at http://127.0.0.1:5001/");
+var server = app.listen(10000, function () {
+  console.log("Express App running at http://127.0.0.1:10000/");
 });
