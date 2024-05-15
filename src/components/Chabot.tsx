@@ -1,24 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, FormEvent } from "react";
+
+interface Message {
+  text: string;
+  fromUser: boolean;
+}
 
 const Chatbot: React.FC = () => {
-  const [messages, setMessages] = useState<
-    { text: string; fromUser: boolean }[]
-  >([]);
+  const [messages, setMessages] = useState<Message[]>([]);
 
-  const handleMessageSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleMessageSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const message = e.currentTarget.message.value.trim();
+    const message: string = e.currentTarget.message.value.trim();
     if (!message) return;
 
-    setMessages((prevMessages) => [
+    setMessages((prevMessages: Message[]) => [
       ...prevMessages,
       { text: message, fromUser: true },
     ]);
 
     setTimeout(() => {
-      fetch("http://127.0.0.1:5001/"+message).then((response) => {
-        response.text().then((output) => {
-          setMessages((prevMessages) => [
+      fetch("http://127.0.0.1:5001/" + message).then((response) => {
+        response.text().then((output: string) => {
+          setMessages((prevMessages: Message[]) => [
             ...prevMessages,
             {
               text: output,
@@ -27,14 +30,14 @@ const Chatbot: React.FC = () => {
           ]);
         });
       });
-    }, 1000); 
+    }, 1000);
     e.currentTarget.reset();
   };
 
   return (
     <div className="flex flex-col h-[75vh] bg-black">
       <div className="flex-1 p-1 overflow-y-auto">
-        {messages.map((msg, index) => (
+        {messages.map((msg: Message, index: number) => (
           <div
             key={index}
             className={`chat ${
