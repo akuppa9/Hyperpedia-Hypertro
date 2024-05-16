@@ -18,7 +18,7 @@ const MainTitle = () => {
               navigate("/hypertrophy");
             }}
           >
-            What is Hypertophy ?
+            What is Hypertophy?
           </a>
         </div>
         <div>
