@@ -69,7 +69,7 @@ const {
     parts.push({text: prompt});
     parts.push({text: " "});
     const result = await model.generateContent({
-      contents: [{ role: "user", parts }],
+      contents: [{ role: "user", prompt }],
       generationConfig,
       safetySettings,
     });
