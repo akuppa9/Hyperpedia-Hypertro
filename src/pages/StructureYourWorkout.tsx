@@ -334,7 +334,7 @@ const StructureYourWorkout = () => {
             </div>
             <div className="flex justify-center items-center">
               <img
-                src="src/images/2day.png"
+                src="images/2day.png"
                 className="w-full h-auto max-w-xs"
               ></img>
             </div>
@@ -354,7 +354,7 @@ const StructureYourWorkout = () => {
             </div>
             <div className="flex justify-center items-center">
               <img
-                src="src/images/3day.png"
+                src="images/3day.png"
                 className="w-full h-auto max-w-xs"
               ></img>
             </div>
@@ -375,7 +375,7 @@ const StructureYourWorkout = () => {
             </div>
             <div className="flex justify-center items-center">
               <img
-                src="src/images/4day.png"
+                src="images/4day.png"
                 className="w-full h-auto max-w-xs"
               ></img>
             </div>

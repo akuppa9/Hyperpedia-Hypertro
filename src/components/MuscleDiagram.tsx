@@ -27,13 +27,13 @@ const MuscleDiagram: React.FC = () => {
     <>
       <div className="overflow-x-auto">
         <img
-          src="src/images/diagram.png"
+          src="images/diagram.png"
           useMap="#large-image-map"
           className="h-[720px] w-[720px] object-cover hidden md:block"
         ></img>
 
         <img
-          src="src/images/diagram (1).png"
+          src="images/diagram (1).png"
           useMap="#small-image-map"
           className="md:hidden"
         ></img>

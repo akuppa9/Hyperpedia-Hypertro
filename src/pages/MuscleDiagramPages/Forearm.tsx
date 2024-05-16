@@ -12,7 +12,7 @@ const Forearm = () => {
         </div>
         <div className="text-white mt-12 ml-12 content flex flex-wrap xl:flex-nowrap py-2">
           <img
-            src="src/images/BrachioradialisFinal.png"
+            src="images/BrachioradialisFinal.png"
             className="object-right h-96 xl:w-96 mr-12"
           ></img>
           <p className="text-xl mt-8 xl:mt-0 mr-20">
@@ -37,11 +37,11 @@ const Forearm = () => {
         </div>
         <div className="text-white mt-12 ml-12 content bg-black flex flex-wrap xl:flex-nowrap py-2">
           <img
-            src="src/images/FlexorFinal.png"
+            src="images/FlexorFinal.png"
             className="object-right h-96 xl:w-96 mr-[65px]"
           ></img>
           <img
-            src="src/images/ExtensorFinal.png"
+            src="images/ExtensorFinal.png"
             className="object-right h-96 xl:w-96 mr-[35px]"
           ></img>
           <p className="text-xl mt-8 xl:mt-0 mr-20">

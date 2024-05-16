@@ -31,7 +31,7 @@ const WhatIsHypertrophy = () => {
           </p>
           <div className="flex items-center justify-center mt-[50px]">
             <img
-              src="src/images/SkeletalMuscle.png"
+              src="images/SkeletalMuscle.png"
               className="h-64 w-96"
             ></img>
           </div>
@@ -46,7 +46,7 @@ const WhatIsHypertrophy = () => {
         </div>
         <div className="mx-[90px] md:mx-[200px]">
           <div className="flex items-center justify-center mt-[50px]">
-            <img src="src/images/SCResearch.png" className="h-64 w-96"></img>
+            <img src="images/SCResearch.png" className="h-64 w-96"></img>
           </div>
           <a
             href="https://sandcresearch.medium.com/what-is-training-volume-286b8da6f427"
@@ -70,7 +70,7 @@ const WhatIsHypertrophy = () => {
           <br />
           <br />
           <div className="flex items-center justify-center mt-[50px]">
-            <img src="src/images/ForceVelocity.png" className="h-64 w-96"></img>
+            <img src="images/ForceVelocity.png" className="h-64 w-96"></img>
           </div>
           <a
             href=" https://baye.com/force-velocity-curve-confusion/"
@@ -94,7 +94,7 @@ const WhatIsHypertrophy = () => {
           <br />
           <br />
           <div className="flex items-center justify-center mt-[50px]">
-            <img src="src/images/Type12.png" className="h-64 w-96"></img>
+            <img src="images/Type12.png" className="h-64 w-96"></img>
           </div>
           <a
             href=" https://www.mdpi.com/1660-4601/18/6/3063"
@@ -163,7 +163,7 @@ const WhatIsHypertrophy = () => {
           </h3>
         </div>
         <div className="flex items-center justify-center mt-[50px]">
-          <img src="src/images/LengthTension.png" className="h-64 w-96"></img>
+          <img src="images/LengthTension.png" className="h-64 w-96"></img>
         </div>
         <a
           href="https://www.researchgate.net/figure/Tension-length-relationship-of-a-sarcomere-Netter-medical-illustration-used-with_fig2_23558507"

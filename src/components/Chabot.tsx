@@ -54,7 +54,7 @@ const Chatbot: React.FC = () => {
                   <div className="w-10 rounded-full">
                     <img
                       alt="Tailwind CSS chat bubble component"
-                      src="src/images/HypertroIcon.jpeg"
+                      src="images/HypertroIcon.jpeg"
                     />
                   </div>
                 </div>

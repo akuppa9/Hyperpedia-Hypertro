@@ -12,7 +12,7 @@ const Obliques = () => {
         </div>
         <div className="text-white mt-8 ml-12 content flex flex-wrap xl:flex-nowrap py-2">
           <img
-            src="src/images/ObliqueFinal.png"
+            src="images/ObliqueFinal.png"
             className="object-right h-96 w-96 mr-12"
           ></img>
           <p className="text-xl mt-8 xl:mt-0 mr-20">
