@@ -34,6 +34,8 @@ const {
     {text: "output: Hello there! How can I assist you with your weightlifting journey?"},
     {text: "input: Hello Hypertro"},
     {text: "output: Hello there! How can I assist you with your weightlifting journey?"},
+    {text: "input: Thanks"},
+    {text: "output: Of course! Feel free to ask me if you have any other hypertrophy related questions!"},
   ];
 
   async function run(prompt) {
