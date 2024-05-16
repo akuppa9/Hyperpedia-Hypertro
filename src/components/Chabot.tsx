@@ -7,8 +7,12 @@ interface Message {
 
 const Chatbot: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
-    { text: "Hi there! my name is Hypertro and I am here to assist you with any hypertrophy and weightlifting related inquiries. NOTE: If your first question takes some time to get a response, it is because the server needs to spin back up due to inactivity. This will take around 45 seconds.", fromUser: false }
+    {
+      text: "Hi there! my name is Hypertro and I am here to assist you with any hypertrophy and weightlifting related inquiries. NOTE: If your first question takes some time to get a response, it is because the server needs to spin back up due to inactivity. This will take around 45 seconds.",
+      fromUser: false,
+    },
   ]);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleMessageSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -20,20 +24,28 @@ const Chatbot: React.FC = () => {
       { text: message, fromUser: true },
     ]);
 
-    setTimeout(() => {
-      fetch("https://Hyperpedia-Hypertro.onrender.com/" + message).then((response) => {
-        response.text().then((output: string) => {
-          setMessages((prevMessages: Message[]) => [
-            ...prevMessages,
-            {
-              text: output,
-              fromUser: false,
-            },
-          ]);
-        });
-      });
-    }, 1000);
     e.currentTarget.reset();
+
+    setTimeout(() => {
+      setIsLoading(true);
+
+      setTimeout(() => {
+        fetch("https://Hyperpedia-Hypertro.onrender.com/" + message).then(
+          (response) => {
+            response.text().then((output: string) => {
+              setMessages((prevMessages: Message[]) => [
+                ...prevMessages,
+                {
+                  text: output,
+                  fromUser: false,
+                },
+              ]);
+              setIsLoading(false);
+            });
+          }
+        );
+      }, 1000);
+    }, 500);
   };
 
   return (
@@ -71,6 +83,21 @@ const Chatbot: React.FC = () => {
             </div>
           </div>
         ))}
+        {isLoading && (
+          <div className="chat chat-start items-start">
+            <div className="flex items-center justify-start chat-bubble bg-gradient-to-r from-cyan-500 to-blue-500 text-white max-w-xs mb-2">
+              <div className="chat-image avatar mr-2">
+                <div className="w-10 rounded-full">
+                  <img
+                    alt="Tailwind CSS chat bubble component"
+                    src="images/HypertroIcon.jpeg"
+                  />
+                </div>
+              </div>
+              <div className="flex-grow text-left">answering...</div>
+            </div>
+          </div>
+        )}
       </div>
       <form onSubmit={handleMessageSubmit} className="p-4">
         <input
