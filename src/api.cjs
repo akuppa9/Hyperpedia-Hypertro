@@ -3,7 +3,7 @@ var express = require("express");
 var cors = require("cors");
 var app = express();
 var fs = require("fs");
-const port = process.env.PORT || 10000;
+const port = 11000;
 const hypertro = require("./Hypertro.cjs");
 app.get("/:prompt", cors(), function (req, res) {
   hypertro.run(req.params.prompt).then((data) => {
