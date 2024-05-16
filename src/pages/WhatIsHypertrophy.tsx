@@ -190,8 +190,7 @@ const WhatIsHypertrophy = () => {
             counterproductive, as it excessively fatigues the muscle (due to
             various stretch-ion-related mechanisms). Current research indicates
             that only the chest, calves, glutes, hamstrings, and quads benefit
-            from stretch-focused hypertrophy. excess force and stimulate protein
-            synthesis for muscle growth.
+            from stretch-focused hypertrophy.
           </p>
         </div>
         <br />

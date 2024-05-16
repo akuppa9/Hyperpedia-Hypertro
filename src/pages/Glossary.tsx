@@ -23,9 +23,9 @@ const Glossary = () => {
                 Actin-Myosin Crossbridge
               </h2>
               <p className="text-xl text-white">
-                Connections formed between the actin and myosin to increase the
-                force produced by the sarcomeres to complete a repetition under
-                a high motor unit recruitment environment
+                Connections formed between the actin and myosin to generate
+                force by the sarcomeres in order to complete a repitition of an
+                exercise.
               </p>
             </div>
             <br />

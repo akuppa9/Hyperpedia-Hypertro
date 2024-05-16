@@ -7,7 +7,7 @@ interface Message {
 
 const Chatbot: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
-    { text: "Hi there! my name is Hypertro and I am here to assist you with any hypertrophy and weightlifting related inquiries.", fromUser: false }
+    { text: "Hi there! my name is Hypertro and I am here to assist you with any hypertrophy and weightlifting related inquiries. NOTE: If your first question takes some time to get a response, it is because the server needs to spin back up due to inactivity. This will take around 45 seconds.", fromUser: false }
   ]);
 
   const handleMessageSubmit = (e: FormEvent<HTMLFormElement>) => {
