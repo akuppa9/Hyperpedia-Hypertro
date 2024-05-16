@@ -6,7 +6,9 @@ interface Message {
 }
 
 const Chatbot: React.FC = () => {
-  const [messages, setMessages] = useState<Message[]>([]);
+  const [messages, setMessages] = useState<Message[]>([
+    { text: "Hi there! my name is Hypertro and I am here to assist you with any hypertrophy and weightlifting related inquiries.", fromUser: false }
+  ]);
 
   const handleMessageSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
