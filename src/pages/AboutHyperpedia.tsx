@@ -10,7 +10,7 @@ const AboutHyperpedia = () => {
         <div>
           <Navbar />
           <div className="flex justify-center items-center mt-[55px] mx-[10px] md:mx-[30px]">
-            <h1 className="text-7xl md:text-8xl text-white font-bold">
+            <h1 className="text-6xl md:text-8xl text-white font-bold">
               Unlock your Dream Physique
             </h1>
           </div>
