@@ -7,7 +7,7 @@ const AboutHypertro = () => {
       <div className="bg-black text-center">
         <Navbar />
         <div className="flex justify-center items-center mt-[55px] mx-[10px] md:mx-[30px]">
-          <h1 className=" text-7xl md:text-8xl text-white font-bold">
+          <h1 className=" text-6xl md:text-8xl text-white font-bold">
             Your AI Hypertrophy Expert
           </h1>
         </div>

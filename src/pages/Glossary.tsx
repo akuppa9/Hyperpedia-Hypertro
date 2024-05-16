@@ -9,7 +9,7 @@ const Glossary = () => {
         <div>
           <Navbar />
           <div className="flex justify-center items-center mt-[35px] mx-[30px] bg-black">
-            <h1 className="text-7xl md:text-8xl text-white font-bold">
+            <h1 className="text-6xl md:text-8xl text-white font-bold">
               Glossary
             </h1>
           </div>
