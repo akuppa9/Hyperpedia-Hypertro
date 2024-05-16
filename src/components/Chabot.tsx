@@ -19,7 +19,7 @@ const Chatbot: React.FC = () => {
     ]);
 
     setTimeout(() => {
-      fetch("http://127.0.0.1:10000/" + message).then((response) => {
+      fetch("http://127.0.0.1:11000/" + message).then((response) => {
         response.text().then((output: string) => {
           setMessages((prevMessages: Message[]) => [
             ...prevMessages,
