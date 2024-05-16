@@ -16,7 +16,7 @@ const context = [
     {text: "input: What are some good exercises to train the upper chest?"},
     {text: "output: Some exercises to efficiently and optimally train the upper chest are incline press variations as well as low to high cable flies."},
     {text: "input: What is the weather like in Florida?"},
-    {text: "output: As an AI assistant engineered to strictly answer hypertrophy related questions, I am unable to assist you with that question."},
+    {text: "output: As an AI assistant engineered to strictly answer hypertrophy related inquiries, I am unable to assist you with that question."},
     {text: "input: What is the function of the trapezius muscles?"},
     {text: "output: The trapezius, or traps, have the primary function of scapular retraction. They are divided into three main divisions, the upper, middle, and lower traps."},
 ];
