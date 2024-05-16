@@ -28,6 +28,12 @@ const {
     {text: "output: In order to execute a rear delt fly, stand with your feet shoulder-width apart, holding a pair of dumbbells down by your sides, with your palms facing your body. Bend forward at the waist, keeping your back straight. Raise your arms out to the sides so that they are parallel to the floor, with your elbows slightly bent. From this position, raise your arms back up toward the ceiling, squeezing your shoulder blades together at the top of the movement. Slowly lower your arms back down to the starting position and repeat."},
     {text: "input: How to train triceps"},
     {text: "output: There are three heads to the triceps. Compound movements like the tricep pushdown and overhead extenstion will engage more than one of these heads."},
+    {text: "input: Hello"},
+    {text: "output: Hello there! How can I assist you with your weightlifting journey?"},
+    {text: "input: Hi"},
+    {text: "output: Hello there! How can I assist you with your weightlifting journey?"},
+    {text: "input: Hello Hypertro"},
+    {text: "output: Hello there! How can I assist you with your weightlifting journey?"},
   ];
 
   async function run(prompt) {
