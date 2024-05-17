@@ -87,7 +87,7 @@ const WhatIsHypertrophy = () => {
             muscle contraction slows down, and the force production of the
             fibers reaches a peak. You should try to increase weight while
             staying within the 5-8 rep range as frequently as possible; this is
-            known as progressive overload. As seen in Figure 2, if fewer than 5
+            known as progressive overload. As seen in Figure 1, if fewer than 5
             reps are completed, the muscle receives less stimulation. Lower reps
             (below 5) are a focus in powerlifting training.
           </p>
