@@ -27,13 +27,6 @@ const LowerAbdominals = () => {
             and the actual function of both divisions is the same.
             <br></br>
             <br></br>
-            The lower abdominals or lower abs are part of the core and one of
-            the main divisions of the rectus abdominis. The lower abs are the
-            smaller of the two divisions and are often more underdeveloped. The
-            divisions of the abdominal muscles are often discussed for clarity,
-            and the actual function of both divisions is the same.
-            <br></br>
-            <br></br>
             The divisions of the abdominals can be biased, despite them sharing
             the same function. To bias the lower abs, exercises that bring the
             hips and legs toward the upper body are best. Recent research has
