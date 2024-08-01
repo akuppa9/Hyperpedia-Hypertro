@@ -1,14 +1,11 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
+import Navbar from "../components/Navbar";
+import ChatbotPopup from "../components/ChatbotPopup";
 import { useNavigate } from "react-router-dom";
-
-// Use lazy loading for Navbar and ChatbotPopup components
-const Navbar = lazy(() => import("../components/Navbar"));
-const ChatbotPopup = lazy(() => import("../components/ChatbotPopup"));
-
 const AboutHyperpedia = () => {
   const navigate = useNavigate();
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <>
       <div className="bg-black text-center">
         <div>
           <Navbar />
@@ -33,7 +30,7 @@ const AboutHyperpedia = () => {
             providing accurate, evidence-based information about hypertrophy and
             muscle development. Our mission is to combat the widespread
             misinformation that plagues the fitness industry by empowering
-            individuals with evidence-based knowledge to optimize their training
+            individuals with eivdence-based knowledge to optimize their training
             and achieve their fitness goals effectively.
           </p>
         </div>
@@ -182,8 +179,7 @@ const AboutHyperpedia = () => {
         </div>
         <br />
       </div>
-    </Suspense>
+    </>
   );
 };
-
 export default AboutHyperpedia;
