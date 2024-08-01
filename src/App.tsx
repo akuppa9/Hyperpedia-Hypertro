@@ -31,7 +31,7 @@ const App: React.FC = () => {
     <>
       <div className="App">
         <Router>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<div className="bg-black"></div>}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about-hyperpedia" element={<AboutHyperpedia />} />
