@@ -1,37 +1,41 @@
-import React, { Suspense, lazy } from "react";
+import { Children, useEffect, useState, useRef } from "react";
 import "./index.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-// Lazy load pages
-const Home = lazy(() => import("./pages/Home"));
-const AboutHyperpedia = lazy(() => import("./pages/AboutHyperpedia"));
-const AboutHypertro = lazy(() => import("./pages/AboutHypertro"));
-const Glossary = lazy(() => import("./pages/Glossary"));
-const WhatIsHypertrophy = lazy(() => import("./pages/WhatIsHypertrophy"));
-const BodyModel = lazy(() => import("./pages/BodyModel"));
-const StructureYourWorkout = lazy(() => import("./pages/StructureYourWorkout"));
-const Chest = lazy(() => import("./pages/MuscleDiagramPages/Chest"));
-const Deltoids = lazy(() => import("./pages/MuscleDiagramPages/Deltoids"));
-const Bicep = lazy(() => import("./pages/MuscleDiagramPages/Bicep"));
-const Forearm = lazy(() => import("./pages/MuscleDiagramPages/Forearm"));
-const UpperAbs = lazy(() => import("./pages/MuscleDiagramPages/UpperAbs"));
-const LowerAbs = lazy(() => import("./pages/MuscleDiagramPages/LowerAbs"));
-const Obliques = lazy(() => import("./pages/MuscleDiagramPages/Obliques"));
-const Quadriceps = lazy(() => import("./pages/MuscleDiagramPages/Quadriceps"));
-const Traps = lazy(() => import("./pages/MuscleDiagramPages/TrapsRhomboids"));
-const Lats = lazy(() => import("./pages/MuscleDiagramPages/Lats"));
-const LowerBack = lazy(() => import("./pages/MuscleDiagramPages/LowerBack"));
-const Tricep = lazy(() => import("./pages/MuscleDiagramPages/Tricep"));
-const Hamstring = lazy(() => import("./pages/MuscleDiagramPages/Hamstring"));
-const Calves = lazy(() => import("./pages/MuscleDiagramPages/Calves"));
-const Sources = lazy(() => import("./pages/Sources"));
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useRoutes,
+} from "react-router-dom";
+//page imports
+import Home from "./pages/Home";
+import AboutHyperpedia from "./pages/AboutHyperpedia";
+import AboutHypertro from "./pages/AboutHypertro";
+import Glossary from "./pages/Glossary";
+import WhatIsHypertrophy from "./pages/WhatIsHypertrophy";
+import BodyModel from "./pages/BodyModel";
+import StructureYourWorkout from "./pages/StructureYourWorkout";
+import Chest from "./pages/MuscleDiagramPages/Chest";
+import Deltoids from "./pages/MuscleDiagramPages/Deltoids";
+import Bicep from "./pages/MuscleDiagramPages/Bicep";
+import Forearm from "./pages/MuscleDiagramPages/Forearm";
+import UpperAbs from "./pages/MuscleDiagramPages/UpperAbs";
+import LowerAbs from "./pages/MuscleDiagramPages/LowerAbs";
+import Obliques from "./pages/MuscleDiagramPages/Obliques";
+import Quadriceps from "./pages/MuscleDiagramPages/Quadriceps";
+import Traps from "./pages/MuscleDiagramPages/TrapsRhomboids";
+import Lats from "./pages/MuscleDiagramPages/Lats";
+import LowerBack from "./pages/MuscleDiagramPages/LowerBack";
+import Tricep from "./pages/MuscleDiagramPages/Tricep";
+import Hamstring from "./pages/MuscleDiagramPages/Hamstring";
+import Calves from "./pages/MuscleDiagramPages/Calves";
+import Sources from "./pages/Sources";
 
 const App: React.FC = () => {
   return (
     <>
       <div className="App">
         <Router>
-          <Suspense fallback={<div className="fixed inset-0 bg-black"></div>}>
+          <div>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about-hyperpedia" element={<AboutHyperpedia />} />
@@ -56,7 +60,7 @@ const App: React.FC = () => {
               <Route path="/calves" element={<Calves />} />
               <Route path="/sources" element={<Sources />} />
             </Routes>
-          </Suspense>
+          </div>
         </Router>
       </div>
     </>
