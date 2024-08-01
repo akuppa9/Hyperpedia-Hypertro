@@ -31,7 +31,7 @@ const App: React.FC = () => {
     <>
       <div className="App">
         <Router>
-          <Suspense fallback={<div className="bg-black"></div>}>
+          <Suspense fallback={<div className="fixed inset-0 bg-black"></div>}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about-hyperpedia" element={<AboutHyperpedia />} />
