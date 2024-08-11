@@ -6,12 +6,32 @@ const MainTitle = () => {
   return (
     <>
       <div className="text-white mt-20 ml-4 sm:mt-40 sm:ml-8">
-        <h1 className="text-4xl sm:text-7xl font-bold">The Hyperpedia</h1>
+        <style>
+          {`
+            h1 {
+              font-size: 2.25rem; 
+              font-weight: 700; 
+              color: white;
+            }
+            .subtitle {
+              font-size: 1.875rem; 
+              font-weight: 300; 
+            }
+            @media (min-width: 640px) {
+              h1 {
+                font-size: 4.5rem; 
+              }
+              .subtitle {
+                font-size: 3.75rem; 
+              }
+            }
+          `}
+        </style>
+        <h1>The Hyperpedia</h1>
         <br />
-        <h1 className="text-3xl sm:text-6xl font-light">
-          The Ultimate Gym Encyclopedia
-        </h1>
+        <h1 className="subtitle">The Ultimate Gym Encyclopedia</h1>
       </div>
+
       <div className="flex flex-col md:flex-row mt-10 ml-4 sm:ml-8 space-y-4 md:space-y-0 md:space-x-4">
         <div>
           <a
@@ -36,11 +56,13 @@ const MainTitle = () => {
           </a>
         </div>
       </div>
+
       <img
         loading="lazy"
         src="images/3.png"
         className="hidden w-4/9 h-5/6 xl:block xl:absolute bottom-0 left-[950px]"
-      ></img>
+        alt="Illustration"
+      />
     </>
   );
 };
