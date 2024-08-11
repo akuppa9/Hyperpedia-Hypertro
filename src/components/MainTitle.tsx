@@ -37,6 +37,7 @@ const MainTitle = () => {
         </div>
       </div>
       <img
+        loading="lazy"
         src="images/3.png"
         className="hidden w-4/9 h-5/6 xl:block xl:absolute bottom-0 left-[950px]"
       ></img>

@@ -27,6 +27,7 @@ const MuscleDiagram: React.FC = () => {
     <>
       <div className="overflow-x-auto">
         <img
+          loading="lazy"
           src="images/diagram.png"
           useMap="#large-image-map"
           className="h-[720px] w-[720px] object-cover hidden md:block"
