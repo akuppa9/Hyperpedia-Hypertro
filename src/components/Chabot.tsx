@@ -8,7 +8,7 @@ interface Message {
 const Chatbot: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
-      text: "Hi there! my name is Hypertro, your personal hypertrophy assistant. I am here to assist you with any hypertrophy and weightlifting related inquiries.",
+      text: "Hi there! my name is Hypertro, your personal hypertrophy assistant. I am here to assist you with any hypertrophy and weightlifting related inquiries. **NOTE**: First response may take up to 45 seconds to generate due to server spin-up time.",
       fromUser: false,
     },
   ]);
