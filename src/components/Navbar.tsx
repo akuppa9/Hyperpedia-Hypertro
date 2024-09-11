@@ -4,7 +4,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="navbar bg-black">
+      <div className="navbar bg-black fixed top-0 left-0 right-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -150,10 +150,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-end">
-         
-        </div>
+
+        <div className="navbar-end"></div>
       </div>
+      <div className="pb-12"></div>
     </>
   );
 };
