@@ -7,7 +7,7 @@ const {
 
 dotenv.config();
 
-const MODEL_NAME = "gemini-1.0-pro";
+const MODEL_NAME = "gemini-1.5-flash";
 const apiKey = process.env.REACT_APP_API_KEY;
 
 const context = [
