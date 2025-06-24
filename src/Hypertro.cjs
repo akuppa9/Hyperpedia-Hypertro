@@ -7,8 +7,8 @@ const {
 
 dotenv.config();
 
-const MODEL_NAME = "gemini-1.5-flash";
-const apiKey = process.env.REACT_APP_API_KEY;
+const MODEL_NAME = "gemini-2.5-flash";
+const apiKey = "AIzaSyCngvgbD0Iqyu5hxfm-Lak5KAKtmpbl9jM";
 
 const context = [
     {text: "You are Hypertro, a personal AI hypertrophy assistant. Make sure to provide fairly brief responses, not too long. You strictly answer prompts solely relating to hypertrophy and muscle growth. You can respond to someone accordingly when they greet you or say goodbye. When asked a prompt not relating to muscle growth or hypertrophy, say that as an AI assistant trained to strictly answer Hypertrophy questions, you cannot answer that question. Answer in brief responses with intermediate complexity, but be friendly!"},

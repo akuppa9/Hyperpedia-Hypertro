@@ -33,7 +33,6 @@ Hypertro, Hyperpedia's integrated chatbot, is your friendly AI companion, prompt
 
 
 ### 🏠 [Website Link](https://hyperpedia.net)
-### May take ~1 minute to load the page
 
 
 ## Developers
