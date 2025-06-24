@@ -30,7 +30,7 @@ const Chatbot: React.FC = () => {
       setIsLoading(true);
 
       setTimeout(() => {
-        fetch("https://Hyperpedia-Hypertro.onrender.com/" + message).then(
+        fetch("http://localhost:10000/" + message).then(
           (response) => {
             response.text().then((output: string) => {
               setMessages((prevMessages: Message[]) => [
